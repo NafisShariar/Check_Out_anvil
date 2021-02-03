@@ -4,6 +4,7 @@
 
 ### Project Specifications
 
+- Implemented C.R.U.D
 - Add Tasks/Reminders
 - Edit Tasks
 - Add Descriptions of Tasks
