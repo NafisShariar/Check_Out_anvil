@@ -1,0 +1,34 @@
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {auto_create_missing_columns: false}
+package_name: Check_Out
+allow_embedding: false
+name: Check Out
+runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox}
+metadata: {}
+startup_form: AllTasks
+db_schema:
+- name: Todos
+  id: 103506
+  python_name: todos
+  columns:
+    +yKaWZ1Y6Zo=:
+      name: completed_on
+      type: datetime
+      admin_ui: {order: 3, width: 200}
+    PIsAbteUGG8=:
+      name: done
+      type: bool
+      admin_ui: {order: 2, width: 200}
+    aYM+ifThpJg=:
+      name: description
+      type: string
+      admin_ui: {order: 1, width: 200}
+    dWuh+c5nmns=:
+      name: task
+      type: string
+      admin_ui: {order: 0, width: 200}
+  access: {python_name: todos, app_id: ESYIH5HR6QLOLQNU, server: full, client: full,
+    table_mapping_name: null, table_mapping_id: null, table_id: 103506}
+renamed: true

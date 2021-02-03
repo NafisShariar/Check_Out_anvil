@@ -1,0 +1,31 @@
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{}'}
+components:
+- type: Label
+  properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+    visible: true, text: 'Task:', font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+    underline: false, icon: ''}
+  name: label_1
+  layout_properties: {grid_position: 'KILETF,WWQIZF'}
+- type: TextBox
+  properties: {}
+  name: text_box_1
+  layout_properties: {grid_position: 'KILETF,AGXMJU'}
+  data_bindings:
+  - {property: text, code: 'self.item[''task'']', writeback: true}
+- type: Label
+  properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+    visible: true, text: 'Description:', font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+    underline: false, icon: ''}
+  name: label_2
+  layout_properties: {grid_position: 'DRFKAU,CWYNKQ'}
+- type: TextArea
+  properties: {}
+  name: text_area_1
+  layout_properties: {grid_position: 'DRFKAU,IGZLUF'}
+  data_bindings:
+  - {property: text, code: 'self.item[''description'']', writeback: true}
+is_package: true
